@@ -5,8 +5,6 @@
 # email: jpfolador@gmail.com
 # -------------------------------------------------------------------
 
-setwd("D:/arquivos_doutorado/Doutorado/Projeto de Pesquisa/_paper_sidabi_2020/usability")
-
 # load the packages
 if (!require("tidyr")) { install.packages('tidyr') }
 if (!require("irr")) { install.packages('irr') }

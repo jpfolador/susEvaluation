@@ -40,7 +40,7 @@ evaluatorAge$percentage <- lapply(evaluatorAge$Freq, function(x) {
 questionAplot <- ggplot(evaluatorAge, aes(x = Var1, y = Freq)) +
                   geom_bar(stat = "identity", width = 0.5, fill = "black", alpha = 0.4) + 
                   geom_text(aes(label=Freq), vjust=-0.2, color="#444444", size=6)+
-                  labs(x = "Variables", y = "Frequency",
+                  labs(x = "Variable", y = "Frequency",
                        title="Age") + #, subtitle="How old are you?", caption="") +
                   ylim(0, 32) +
                   theme(text=element_text(size=20,  family="serif"),
@@ -64,7 +64,7 @@ compExperience$percentage <- lapply(compExperience$Freq, function(x) {
 questionBplot <- ggplot(compExperience, aes(x = Var1, y = Freq)) +
                   geom_bar(stat = "identity", width = 0.5, fill = "grey", alpha = 0.5) + 
                   geom_text(aes(label=Freq), vjust=-0.2, color="#444444", size=6)+
-                  labs(x = "Variables", y = "Frequency",
+                  labs(x = "Variable", y = "Frequency",
                        title="Experience") + #, subtitle="How long have you been using a computer?", caption="") +
                   ylim(0, 32) +
                   theme(text=element_text(size=20,  family="serif"),
@@ -88,7 +88,7 @@ compUseWeek$percentage <- lapply(compUseWeek$Freq, function(x) {
 questionCplot <- ggplot(compUseWeek, aes(x = Var1, y = Freq)) +
                   geom_bar(stat = "identity", width = 0.5, fill = "black", alpha = 0.7) + 
                   geom_text(aes(label=Freq), vjust=-0.2, color="#444444", size=6)+
-                  labs(x = "Variables", y = "Frequency",
+                  labs(x = "Variable", y = "Frequency",
                        title="Time spent") + #, subtitle="How much time in a week do you spend using a computer?", caption="") +
                   ylim(0, 32) +
                   theme(text=element_text(size=20,  family="serif"),
@@ -119,7 +119,7 @@ ggplot(gatheredData, aes(x = key, y = value, fill=key), color=key) +
                 shape = 19,
                 size = 3,
                 color = "red") + 
-  labs(x = "Questions", y = "Values", title="SUS questions") +
+  labs(x = "Question (q)", y = "Value (w)", title="SUS questions") +
   scale_fill_grey(start = 0.5, end = 1) +
   theme(text=element_text(size=20,  family="serif"),
         axis.text.x = element_text(size=22),
@@ -173,9 +173,9 @@ sd(scoreSus$points)
     geom_text(aes(0, mean(points),label = formatC(mean(points), 2, format="f"), vjust = -0.3, hjust = -1.1), size=7,  family="serif", colour = "red") +
     geom_hline(aes(yintercept = 68),
                colour = "blue", linetype ="dotted", size = 1.2) +
-    geom_text(aes(0, 68,label = 68, vjust = -0.3, hjust = -2.5), size=7, family="serif", colour = "blue") +
+    geom_text(aes(0, 68.00,label = 68.00, vjust = -0.3, hjust = -2.5), size=7, family="serif", colour = "blue") +
     
-    labs(x = "Judges", y = "Points", title="SUS Score") + 
+    labs(x = "Judge", y = "Score", title="SUS Score") + 
     theme(text=element_text(size=20,  family="serif"),
           axis.text.x = element_text(size=20),
           axis.text.y = element_text(size=20),

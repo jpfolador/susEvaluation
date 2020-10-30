@@ -175,7 +175,7 @@ sd(scoreSus$points)
                colour = "blue", linetype ="dotted", size = 1.2) +
     geom_text(aes(0, 68.00,label = 68.00, vjust = -0.3, hjust = -2.5), size=7, family="serif", colour = "blue") +
     
-    labs(x = "Judge", y = "Score", title="SUS Score") + 
+    labs(x = "Examiner", y = "Score", title="SUS Score") + 
     theme(text=element_text(size=20,  family="serif"),
           axis.text.x = element_text(size=20),
           axis.text.y = element_text(size=20),

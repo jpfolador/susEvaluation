@@ -13,6 +13,7 @@ We have a file in R language named `data-analysis-usability-v01.R` that load the
 
 ### Author
 - João Paulo Folador
+- Adriano de Oliveira Andrade (:star: advisor)
 
 ### Reference
 Bangor, A., Kortum, P., & Miller, J. (2009). Determining what individual SUS scores mean: Adding an adjective rating scale. Journal of usability studies, 4(3), 114-123.

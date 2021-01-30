@@ -9,11 +9,12 @@ The final score ranges from zero to 100 points. And to perform this calculation,
 The CSV file contains the first three questions to understand the respondent's profile and then the 10 questions on the SUS scale.
 
 ### How it works
-We have a file in R language named "data-analysis-usability-v01.R" that load the CSV file named “usability-db-en.csv”, then it calculates a histogram for the 3 first questions, creates a boxplot to understand the distribution of the 10 questions, calculates the SUS score of all interface evaluators, and processes the Kendall coefficient of concordance among evaluators.
+We have a file in R language named `data-analysis-usability-v01.R` that load the CSV file named `usability-db-en.csv`, then it calculates a histogram for the 3 first questions, creates a boxplot to understand the distribution of the 10 questions, calculates the SUS score of all interface evaluators, and processes the Kendall coefficient of concordance among evaluators.
 
 ### Author
-João Paulo Folador
+- João Paulo Folador
 
 ### Reference
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.177.1240&rep=rep1&type=pdf
+Bangor, A., Kortum, P., & Miller, J. (2009). Determining what individual SUS scores mean: Adding an adjective rating scale. Journal of usability studies, 4(3), 114-123.
+Available in: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.177.1240&rep=rep1&type=pdf
 
